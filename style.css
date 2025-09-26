@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #4b4949;
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+  color: #dddddd;
+  text-align: center;
+}
+
+.carousel-content h1 {
+  font-size: 4rem;
+}
+
+/* Filtro */
+.filter-section {
+  max-width: 600px;
+  margin: 40px auto 10px;
+  text-align: center;
+}
+
+.filter-toggle {
+  background: #272727;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.filter-menu {
+  display: none;
+  margin-top: 15px;
+  background: #2f2f2f;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.filter-menu.show {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filter-btn {
+  background: #444;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #272727;
+  transform: scale(1.05);
+}
+
+/* Caixa de cada marca */
+.brand-box {
+  background: #5a5a5a;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 50px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.brand-title {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* Produtos */
+.product-card {
+  background-color: #858484;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #eeeeee;
+}
+
+.buy-button {
+  display: block;
+  text-align: center;
+  background: #424242;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  background: #000;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #242323;
+  color: #ffffff;
+  margin-top: 150px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de Celulares</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Carrossel -->
+  <div class="carousel">
+    <video autoplay muted loop>
+      <source src="video/v1.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo em HTML5.
+    </video>
+    <div class="carousel-content">
+      <h1>CLuloide</h1>
+    </div>
+  </div>
+
+  <!-- Filtro Dropdown -->
+  <section class="filter-section">
+    <div class="filter-toggle" id="filterToggle">🔍 Filtrar por Marca</div>
+    <div class="filter-menu" id="filterMenu">
+      <button class="filter-btn active" data-brand="all">Todos</button>
+      <button class="filter-btn" data-brand="apple">Apple</button>
+      <button class="filter-btn" data-brand="samsung">Samsung</button>
+      <button class="filter-btn" data-brand="motorola">Motorola</button>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <main class="container">
+
+    <!-- Apple -->
+    <section class="brand-box" data-brand="apple">
+      <h2 class="brand-title">Apple</h2>
+      <div class="products-grid">
+
+        <div class="product-card" data-brand="apple">
+          <div class="product-image">
+            <img src="img/c1.png" alt="iPhone 14 Pro">
+          </div>
+          <div class="product-info">
+            <h2>iPhone 14 Pro</h2>
+            <p class="price">R$ 7.999,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="apple">
+          <div class="product-image">
+            <img src="img/c4.png" alt="iPhone 17 Pro">
+          </div>
+          <div class="product-info">
+            <h2>iPhone 17 Pro</h2>
+            <p class="price">R$ 11.999,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="apple">
+          <div class="product-image">
+            <img src="img/c5.png" alt="iPhone 16 Pro Max">
+          </div>
+          <div class="product-info">
+            <h2>iPhone 16 Pro Max</h2>
+            <p class="price">R$ 8.999,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Samsung -->
+    <section class="brand-box" data-brand="samsung">
+      <h2 class="brand-title">Samsung</h2>
+      <div class="products-grid">
+
+        <div class="product-card" data-brand="samsung">
+          <div class="product-image">
+            <img src="img/c2.png" alt="Samsung S23 Ultra">
+          </div>
+          <div class="product-info">
+            <h2>Samsung S23 Ultra</h2>
+            <p class="price">R$ 6.499,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="samsung">
+          <div class="product-image">
+            <img src="img/c6.png" alt="Samsung S20">
+          </div>
+          <div class="product-info">
+            <h2>Samsung S20</h2>
+            <p class="price">R$ 6.499,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="samsung">
+          <div class="product-image">
+            <img src="img/c7.png" alt="Samsung A16">
+          </div>
+          <div class="product-info">
+            <h2>Samsung A16</h2>
+            <p class="price">R$ 1.499,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Motorola -->
+    <section class="brand-box" data-brand="motorola">
+      <h2 class="brand-title">Motorola</h2>
+      <div class="products-grid">
+
+        <div class="product-card" data-brand="motorola">
+          <div class="product-image">
+            <img src="img/c8.png" alt="Motorola Edge 50">
+          </div>
+          <div class="product-info">
+            <h2>Motorola Edge 50</h2>
+            <p class="price">R$ 2.999,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="motorola">
+          <div class="product-image">
+            <img src="img/c3.png" alt="Motorola Edge 40">
+          </div>
+          <div class="product-info">
+            <h2>Motorola Edge 40</h2>
+            <p class="price">R$ 2.999,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="motorola">
+          <div class="product-image">
+            <img src="img/c9.png" alt="Motorola Edge 40 Light">
+          </div>
+          <div class="product-info">
+            <h2>Motorola Edge 40 Light</h2>
+            <p class="price">R$ 2.999,00</p>
+            <a href="#" class="buy-button">Comprar</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cluloide. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
